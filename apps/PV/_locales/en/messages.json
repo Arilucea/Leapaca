@@ -1,0 +1,26 @@
+{
+    "appName": {
+        "message": "Leapaca PV",
+        "description": "The name of the application"
+    },
+    "appNameStyled": {
+        "message": "Leapaca <span class=\"version-color\">PV</span>",
+        "description": "The name of the application for UI header"
+    },
+    "appDescription": {
+        "message": "Skip intro, speed control and auto next episode.",
+        "description": "The description of the application"
+    },
+    "skipIntroLabel": {
+        "message": "Skip intro",
+        "description": "Label for the skip intro toggle"
+    },
+    "nextEpisodeLabel": {
+        "message": "Auto-next episode",
+        "description": "Label for the next episode toggle"
+    },
+    "skipPreplayLabel": {
+        "message": "Skip recap",
+        "description": "Label for the skip recap toggle"
+    }
+}
