@@ -1,0 +1,26 @@
+{
+    "appName": {
+        "message": "Leapaca ATV",
+        "description": "El nombre de la aplicación"
+    },
+    "appNameStyled": {
+        "message": "Leapaca <span class=\"version-color\">ATV</span>",
+        "description": "El nombre de la aplicación para el encabezado de la interfaz"
+    },
+    "appDescription": {
+        "message": "Saltar intro, control de velocidad y saltar anuncios para Apple TV.",
+        "description": "La descripción de la aplicación"
+    },
+    "skipIntroLabel": {
+        "message": "Saltar intro",
+        "description": "Etiqueta para el interruptor de saltar intro"
+    },
+    "skipPreplayLabel": {
+        "message": "Saltar resumen",
+        "description": "Etiqueta para el interruptor de saltar resumen"
+    },
+    "skipAdLabel": {
+        "message": "Saltar anuncios",
+        "description": "Etiqueta para el interruptor de saltar anuncios"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "appName": {
+        "message": "Leapaca ATV",
+        "description": "The name of the application"
+    },
+    "appNameStyled": {
+        "message": "Leapaca <span class=\"version-color\">ATV</span>",
+        "description": "The name of the application for UI header"
+    },
+    "appDescription": {
+        "message": "Skip intro, speed control and skip ads for Apple TV.",
+        "description": "The description of the application"
+    },
+    "skipIntroLabel": {
+        "message": "Skip intro",
+        "description": "Label for the skip intro toggle"
+    },
+    "skipPreplayLabel": {
+        "message": "Skip recap",
+        "description": "Label for the skip recap toggle"
+    },
+    "skipAdLabel": {
+        "message": "Skip ads",
+        "description": "Label for the skip ads toggle"
+    }
+}
