@@ -1,0 +1,17 @@
+{
+    "name": "leapaca-tests",
+    "version": "1.0.0",
+    "description": "Test suite for Leapaca browser extension",
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "test:python": "pytest tests/test_build.py -v"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.268",
+        "@types/jest": "^29.5.12",
+        "jest": "^29.7.0",
+        "jest-environment-jsdom": "^29.7.0"
+    }
+}
