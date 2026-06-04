@@ -1,0 +1,46 @@
+:root {
+  /* Shared Constants */
+  --main-gradient: linear-gradient(135deg,
+      #CBF163 0%,
+      #61F65C 45%,
+      #9AE65C 65%,
+      #F87E38 100%);
+  --white: #ffffff;
+  --dark-bg: #131313;
+  --dark-card: #1f1f1f;
+
+  /* Theme */
+  --bg-color: var(--white);
+  --text-color: var(--dark-card);
+  --header-bg: #3e9703;
+  /* Black Header */
+  --header-text: var(--white);
+  --card-bg: #f8f9fa;
+  --border-color: #e0e0e0;
+  --primary-color: #5AC8FA;
+  /* Fallback */
+  --secondary-text: #666666;
+  --sidebar-icon-color: #3e9703;
+  --toggle-bg: #ccc;
+  --toggle-checked: #3e9703;
+  /* Fallback */
+  --version-color: #3e9703;
+  /* Fallback */
+  --popup-height: 450px;
+}
+
+.version-color {
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.toggle input:checked+.toggle-slider {
+  background: var(--main-gradient);
+}
+
+.range-input::-webkit-slider-thumb {
+  background: var(--main-gradient) !important;
+}
