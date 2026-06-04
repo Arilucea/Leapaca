@@ -1,0 +1,22 @@
+:root {
+  /* Shared Constants */
+  --main-color: #e70914;
+  --white: #ffffff;
+  --dark-bg: #131313;
+  --dark-card: #1f1f1f;
+
+  /* Light Theme */
+  --bg-color: var(--white);
+  --text-color: var(--dark-card);
+  --header-bg: var(--main-color);
+  --header-text: var(--white);
+  --card-bg: #f8f9fa;
+  --border-color: #e0e0e0;
+  --primary-color: var(--main-color);
+  --secondary-text: #666666;
+  --sidebar-icon-color: var(--main-color);
+  --toggle-bg: #ccc;
+  --toggle-checked: var(--main-color);
+  --version-color: #000000;
+  --popup-height: 450px;
+}

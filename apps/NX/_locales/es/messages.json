@@ -1,0 +1,26 @@
+{
+    "appName": {
+        "message": "Leapaca NX",
+        "description": "El nombre de la aplicación"
+    },
+    "appNameStyled": {
+        "message": "Leapaca <span class=\"version-color\">NX</span>",
+        "description": "El nombre de la aplicación para el encabezado de la UI"
+    },
+    "appDescription": {
+        "message": "Salto automático de intro, control de velocidad y siguiente episodio.",
+        "description": "La descripción de la aplicación"
+    },
+    "skipIntroLabel": {
+        "message": "Saltar intro",
+        "description": "Etiqueta para el interruptor de saltar intro"
+    },
+    "nextEpisodeLabel": {
+        "message": "Siguiente episodio auto.",
+        "description": "Etiqueta para el interruptor de siguiente episodio"
+    },
+    "skipPreplayLabel": {
+        "message": "Saltar resumen",
+        "description": "Etiqueta para el interruptor de saltar recap"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "speedLabel": {
+        "message": "Playback speed",
+        "description": "Label for the speed control"
+    },
+    "optionsTitle": {
+        "message": "Settings",
+        "description": "Title for the options page"
+    },
+    "languageLabel": {
+        "message": "Language",
+        "description": "Label for the language selector"
+    },
+    "englishLanguage": {
+        "message": "English",
+        "description": "Option for English language"
+    },
+    "spanishLanguage": {
+        "message": "Español",
+        "description": "Option for Spanish language"
+    },
+    "themeLabel": {
+        "message": "Theme",
+        "description": "Label for the theme selector"
+    },
+    "autoTheme": {
+        "message": "Auto",
+        "description": "Option for auto theme"
+    },
+    "lightTheme": {
+        "message": "Light",
+        "description": "Option for light theme"
+    },
+    "darkTheme": {
+        "message": "Dark",
+        "description": "Option for dark theme"
+    },
+    "lockSpeedLabel": {
+        "message": "Lock speed",
+        "description": "Label for the toggle to lock speed"
+    },
+    "pipLabel": {
+        "message": "Picture-in-Picture",
+        "description": "Label for the Picture-in-Picture button"
+    },
+    "enablePipLabel": {
+        "message": "Enable Picture-in-Picture",
+        "description": "Label for the toggle to enable Picture-in-Picture button"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "speedLabel": {
+        "message": "Velocidad de reproducción",
+        "description": "Etiqueta para el control de velocidad"
+    },
+    "optionsTitle": {
+        "message": "Opciones",
+        "description": "Título de la página de opciones"
+    },
+    "languageLabel": {
+        "message": "Idioma",
+        "description": "Etiqueta para el selector de idioma"
+    },
+    "englishLanguage": {
+        "message": "Inglés",
+        "description": "Opción para idioma inglés"
+    },
+    "spanishLanguage": {
+        "message": "Español",
+        "description": "Opción para idioma español"
+    },
+    "themeLabel": {
+        "message": "Tema",
+        "description": "Etiqueta para el selector de tema"
+    },
+    "autoTheme": {
+        "message": "Automático",
+        "description": "Opción para tema automático"
+    },
+    "lightTheme": {
+        "message": "Claro",
+        "description": "Opción para tema claro"
+    },
+    "darkTheme": {
+        "message": "Oscuro",
+        "description": "Opción para tema oscuro"
+    },
+    "lockSpeedLabel": {
+        "message": "Bloquear velocidad",
+        "description": "Etiqueta para el interruptor de bloquear la velocidad"
+    },
+    "pipLabel": {
+        "message": "Imagen en imagen",
+        "description": "Etiqueta para el botón de Picture-in-Picture"
+    },
+    "enablePipLabel": {
+        "message": "Habilitar Imagen en imagen",
+        "description": "Etiqueta para habilitar el botón de Imagen en imagen"
+    }
+}
