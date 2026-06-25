@@ -8,7 +8,7 @@
   /* Light Theme */
   --bg-color: var(--white);
   --text-color: var(--dark-card);
-  --header-bg: var(--main-color);
+  --header-bg: #0a5caf;
   --header-text: var(--white);
   --card-bg: #f8f9fa;
   --border-color: #e0e0e0;
@@ -17,6 +17,7 @@
   --sidebar-icon-color: var(--main-color);
   --toggle-bg: #ccc;
   --toggle-checked: var(--main-color);
-  --version-color: #000000;
+  --version-color: var(--main-color);
+  ;
   --popup-height: 350px;
 }
