@@ -1,0 +1,77 @@
+name: Publish Extension
+
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: "App to release (e.g., NX, PV)"
+        required: true
+        default: "NX"
+        type: choice
+        options:
+          - NX
+          - PV
+          - ATV
+          - ONE
+  push:
+    tags:
+      - "*-v*.*.*"
+
+jobs:
+  publish:
+    name: Publish ${{ inputs.app || 'Release' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Determine App Name
+        id: vars
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "APP_NAME=${{ inputs.app }}" >> $GITHUB_ENV
+          else
+            # Extract app name from tag (e.g., NX-v1.0.0 -> NX)
+            TAG_NAME=${{ github.ref_name }}
+            APP_NAME=$(echo $TAG_NAME | cut -d'-' -f1 | tr '[:lower:]' '[:upper:]')
+            echo "APP_NAME=$APP_NAME" >> $GITHUB_ENV
+          fi
+
+      - name: Set Extension ID
+        run: |
+          if [ "$APP_NAME" == "NX" ]; then
+            echo "EXTENSION_ID=${{ secrets.CWS_EXTENSION_ID_NX }}" >> $GITHUB_ENV
+          elif [ "$APP_NAME" == "PV" ]; then
+            echo "EXTENSION_ID=${{ secrets.CWS_EXTENSION_ID_PV }}" >> $GITHUB_ENV
+          elif [ "$APP_NAME" == "ATV" ]; then
+            echo "EXTENSION_ID=${{ secrets.CWS_EXTENSION_ID_ATV }}" >> $GITHUB_ENV
+          elif [ "$APP_NAME" == "ONE" ]; then
+            echo "EXTENSION_ID=${{ secrets.CWS_EXTENSION_ID_ONE }}" >> $GITHUB_ENV
+          else
+            echo "::error::Extension ID not defined for app: $APP_NAME"
+            exit 1
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Build Extension
+        run: python build.py ${{ env.APP_NAME }}
+
+      - name: Zip extension
+        run: |
+          cd build
+          zip -r ../extension.zip .
+
+      - name: Upload to Chrome Web Store
+        uses: mnao305/chrome-extension-upload@v6.0.0
+        with:
+          extension-id: ${{ env.EXTENSION_ID }}
+          file-path: extension.zip
+          client-id: ${{ secrets.CWS_CLIENT_ID }}
+          client-secret: ${{ secrets.CWS_CLIENT_SECRET }}
+          refresh-token: ${{ secrets.CWS_REFRESH_TOKEN }}
+          publish: true
