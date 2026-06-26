@@ -45,7 +45,9 @@ This will create a `build/` directory containing the complete extension ready to
 ### Leapaca ONE
 
 <p align="center">
-  <img src="apps/ONE/icons/128.png" alt="Leapaca ONE" width="128">
+  <a href="https://chromewebstore.google.com/detail/leapaca-one/idafdjajkgpiaohjpkikhilpfndainlp">
+    <img src="apps/ONE/icons/128.png" alt="Leapaca ONE" width="128">
+  </a>
 </p>
 
 The **One** version is the universal version of the extension that includes support for all the platforms.
@@ -79,7 +81,9 @@ The **PV** version is optimized for **Amazon Prime Video**, focusing on essentia
 ### Leapaca ATV (Apple TV)
 
 <p align="center">
-  <img src="apps/ATV/icons/128.png" alt="Leapaca ATV" width="128">
+  <a href="https://chromewebstore.google.com/detail/leapaca-atv/apdalemglkfaalhocddhbaempaohfaol">
+    <img src="apps/ATV/icons/128.png" alt="Leapaca ATV" width="128">
+  </a>
 </p>
 
 The **ATV** version is optimized for **Apple TV**, featuring automatic skips for intros, recaps, and ads.
